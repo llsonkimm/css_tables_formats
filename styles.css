@@ -1,0 +1,106 @@
+.table_borders table, th, td{
+    border: 1px, solid;
+}
+
+.table_borders table{
+    padding: 10px;
+}
+
+.collapse_borders table {
+    border-collapse: collapse;
+
+}
+
+.collapse_borders, th, td{
+    border: 1px solid;
+    padding: 15px;
+}
+
+.width_height table{
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.width_height th, td{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.width_height th{
+    height: 40px;
+    text-align: left;
+}
+
+.auto{
+    table-layout: auto;
+}
+
+.fixed{
+    table-layout: fixed;
+}
+
+.table_layout table{
+    border-collapse: separate;
+    width: 250px;
+}
+
+.table_layout table, th, td{
+    border: 1px solid;
+}
+
+.table_layout td{
+    width: 50%;
+}
+
+caption{
+    caption-side: bottom;
+}
+
+.empty-cells table{
+    width: 300px;
+    border-collapse: separate;
+}
+
+.empty-cells, table, th, td{
+    border: 1px solid black;
+}
+
+table.empty_show {
+    empty-cells: show;
+}
+
+table.empty-hidden{
+    empty-cells: hide;
+}
+
+.zebra-striped table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zebra-striped th, td {
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+    padding: 10px;
+}
+
+.zebra-striped tbody tr:nth-child(odd){
+    background-color: rgb(228, 231, 233);
+}
+
+.responsive-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th, td {
+    border: 1px solid #dee2e6;
+    text-align: left;
+    padding: 10px;
+    white-space: nowrap; /*To prevent text wrapping */
+
+}
+
+.responsive-table {
+    overflow-x: auto;
+}

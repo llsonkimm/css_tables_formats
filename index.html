@@ -3,9 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables Formating in CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Adding borders to tables</h1>
+    <div class="table_borders" style="border: none;">
+        <table >
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
     
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>2</td>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>John</td>
+                <td>Rambo</td>
+                <td>johnrambo@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>4</td>
+                <td>Harry</td>
+                <td>Porter</td>
+                <td>harryporter@gmail.com</td>
+            </tr>
+        </table> 
+    </div>
+        
+        
+    <h1>Merging/Collapsing Separate Table borders</h1>
+
+    <!-- Example of Setting Table Cell Padding -->
+     
+    <div class="collapse_borders" style="border: none;">
+        <table >
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>John</td>
+                <td>Rambo</td>
+                <td>johnrambo@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Harry</td>
+                <td>Porter</td>
+                <td>harryporter@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    
+    <h1>Setting Table width and height properties </h1>
+
+    <div class="width_height" style="border: none;">
+        <table >
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>John</td>
+                <td>Rambo</td>
+                <td>johnrambo@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Harry</td>
+                <td>Porter</td>
+                <td>harryporter@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <h1>Controlling the table layout </h1>
+
+    <div class="table_layout" style="border: none;">
+
+        <table class="auto" >
+            <caption>Example 1 Auto</caption>
+            <tr>
+                <th>Name</th>
+                <td>John Carter</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>johncarter@gmail.com</td>
+            </tr>
+        </table>
+        <br>
+
+        <table class="fixed">
+
+            <caption>Example 2 Fixed</caption>
+            <tr>
+                <th>Name</th>
+                <td>Peter Parker</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>peterparker@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="empty_cells">
+        <h1>Table with Empty cells</h1>
+        <table class="empty-show" >
+            <tr>
+                <th>Name</th>
+                <td>John Carter</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+
+        <h1>Table with Hidden Empty cells</h1>
+        <table class="empty-hidden">
+            <tr>
+                <th>Name</th>
+                <td>Peter Parker</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+<br>
+<br>
+<h1>Creating Zebra-striped Tables</h1>
+    <div class="zebra-striped">
+        <table >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@gmail.com</td>
+                </tr>
+    
+                <tr>
+                    <td>2</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@gmail.com</td>
+                </tr>
+    
+                <tr>
+                    <td>3</td>
+                    <td>John</td>
+                    <td>Rambo</td>
+                    <td>johnrambo@gmail.com</td>
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>Harry</td>
+                    <td>Porter</td>
+                    <td>harryporter@gmail.com</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <br><br>
+
+    <h1>Making a Table Responsive</h1>
+    <div class="responsive-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Supplier</th>
+                    <th>Contact Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Postal Code</th>
+                    <th>Country</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Exotic Liquids</td>
+                    <td>Charlotte Cooper</td>
+                    <td>49 Gilbert St.</td>
+                    <td>London</td>
+                    <td>EC1 4SD</td>
+                    <td>UK</td>
+                    <td>(171) 555-2222</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>New Orleans Cajun Delights</td>
+                    <td>Shelley Burke</td>
+                    <td>P.O. Box 78934</td>
+                    <td>New Orleans</td>
+                    <td>70117</td>
+                    <td>USA</td>
+                    <td>(100) 555-4822</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Grandma Kellys Homestead</td>
+                    <td>Regina Murphy</td>
+                    <td>707 Oxford Rd.</td>
+                    <td>Ann Arbor</td>
+                    <td>48104</td>
+                    <td>USA</td>
+                    <td>(313) 555-5735</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tokyo Traders</td>
+                    <td>Yoshi Nagase</td>
+                    <td>9-8 Sekimai Musashino-shi</td>
+                    <td>Tokyo</td>
+                    <td>100</td>
+                    <td>Japan</td>
+                    <td>(03) 3555-5011</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mayumis</td>
+                    <td>Mayumi Ohno</td>
+                    <td>92 Setsuko Chuo-ku</td>
+                    <td>Osaka</td>
+                    <td>545</td>
+                    <td>Japan</td>
+                    <td>(06) 431-7877</td>
+                </tr>
+            </tbody>
+        </table>
+
 </body>
 </html>
